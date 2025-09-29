@@ -1,37 +1,21 @@
+//vendors
 import type React from "react";
-import portada from "./assets/PORTADA.png"
-import logoIcon from "./assets/LOGO.png"
-import linkedinIcon from "./assets/LINKEDIN.png"
-import twitterIcon from "./assets/TWITTER.png"
-import githubIcon from "./assets/GITHUB.png"
 
+// img
+import portada from "../../assets/PORTADA.png"
+import linkedinIcon from "../../assets/LINKEDIN.png"
+import twitterIcon from "../../assets/TWITTER.png"
+import githubIcon from "../../assets/GITHUB.png"
 
-const social_links = {
-    linkedin: 'https://www.linkedin.com/in/jorge-nicolas-fernandez-gamarra',
-    twitter: 'https://x.com/NicFernandezG',
-    github: 'https://github.com/JNicolasFernandezG',
-    email: 'nicolas.fernandezgamarra@gmail.com'
-}
+// navbar
+import { Navbar } from "./navbar";
 
-const Navbar = () => {
-    return(
-        <nav className="navbar">
-        <div className="logo-container">
-            <img src={logoIcon} alt="logo-NFG" />
-        </div >
-        <div className="nav-links">
-        <a href="#proyectos" className="nav-item">PROYECTOS</a>
-        <a href="#sobre-mi" className="nav-item">SOBRE MI</a>
-        <a href="#contactame" className="nav-item">CONTACTAME</a>
-        </div>
-    </nav>
-    )
-}
+// utils
+import { social_links } from "./utils";
+
 
 export const PortadaComponent: React.FC = () => {
-
     return (
-
         <header className="portada-header">
             <Navbar/>
         <div className="content-area">
