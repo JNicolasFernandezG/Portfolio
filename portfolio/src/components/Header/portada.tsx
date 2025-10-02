@@ -2,10 +2,10 @@
 import type React from "react";
 
 // img
-import portada from "../../assets/PORTADA.png"
-import linkedinIcon from "../../assets/LINKEDIN.png"
-import twitterIcon from "../../assets/TWITTER.png"
-import githubIcon from "../../assets/GITHUB.png"
+import portada from "@/assets/PORTADA.png"
+import linkedinIcon from "@/assets/LINKEDIN.png"
+import twitterIcon from "@/assets/TWITTER.png"
+import githubIcon from "@/assets/GITHUB.png"
 
 // navbar
 import { Navbar } from "./navbar";
@@ -14,7 +14,7 @@ import { Navbar } from "./navbar";
 import { social_links } from "./utils";
 
 // styles
-import "./portada.module.css"
+import styles from"./portada.module.css"
 
 
 export const PortadaComponent: React.FC = () => {

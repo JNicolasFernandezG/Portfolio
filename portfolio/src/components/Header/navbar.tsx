@@ -1,7 +1,7 @@
-import logoIcon from "../../assets/LOGO.png"
+import logoIcon from "@/assets/LOGO.png"
 
 // styles
-import "./navbar.module.css"
+import styles from "./navbar.module.css"
 
 export const Navbar = () => {
     return(
