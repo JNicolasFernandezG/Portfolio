@@ -1,4 +1,4 @@
-import './App.css'
+
 import PortadaComponent from './components/Header/portada'
 
 function App() {

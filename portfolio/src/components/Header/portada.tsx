@@ -13,6 +13,9 @@ import { Navbar } from "./navbar";
 // utils
 import { social_links } from "./utils";
 
+// styles
+import "./portada.module.css"
+
 
 export const PortadaComponent: React.FC = () => {
     return (

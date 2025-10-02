@@ -1,5 +1,8 @@
 import logoIcon from "../../assets/LOGO.png"
 
+// styles
+import "./navbar.module.css"
+
 export const Navbar = () => {
     return(
         <nav className="navbar">
