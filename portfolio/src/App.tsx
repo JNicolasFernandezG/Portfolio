@@ -5,7 +5,15 @@ function App() {
   
   return(
     <>
-     <PortadaComponent/>
+    <header>
+      <PortadaComponent/>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+      
+    </footer>
     </>
 
   )

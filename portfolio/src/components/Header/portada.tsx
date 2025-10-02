@@ -34,7 +34,7 @@ export const PortadaComponent: React.FC = () => {
                     TWITTER
                 </a>
                 <a href={social_links.github} target="_blank" className={styles["social-icon"]} rel="noopener noreferrer">
-                    <img src={githubIcon} alt="LOGO-GITHUB" className={styles["social-media-icon"]}/>
+                    <img src={githubIcon} alt="LOGO-GITHUB" className={styles["social-media-logo"]}/>
                     GITHUB
                 </a>
             </div>
