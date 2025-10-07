@@ -9,7 +9,7 @@ export const Navbar = () => {
         <div className={styles["logo-container"]}>
             <img src={logoIcon} alt="logo-NFG" />
         </div >
-        <div className="nav-links">
+        <div className={styles["nav-links"]}>
         <a href="#proyectos" className={styles["nav-item"]}>PROYECTOS</a>
         <a href="#sobre-mi" className={styles["nav-item"]}>SOBRE MI</a>
         <a href="#contactame" className={styles["nav-item"]}>CONTACTAME</a>

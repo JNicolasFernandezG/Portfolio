@@ -48,3 +48,21 @@
     height: 3rem;
     display: block; 
 }
+
+@media (max-width: 768px) {
+    .social-links {
+        bottom: 1rem; 
+        left: 1rem;
+        gap: 0.8rem;
+    }
+
+    .email-contact {
+        bottom: 1rem; 
+        right: 1rem;
+    }
+
+    .social-media-logo {
+        width: 2rem; 
+        height: 2rem;
+    }
+}

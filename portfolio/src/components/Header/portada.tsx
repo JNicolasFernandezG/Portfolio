@@ -20,10 +20,8 @@ import styles from"./portada.module.css"
 export const PortadaComponent: React.FC = () => {
     return (
         <header className={styles["portada-header"]}>
-            <Navbar/>
-        <div className={styles["content-area"]}>
             <img src={portada} alt="Imagen de Portada - Desarrollador Full Stack" className={styles["portada-imagen"]}/>
-            
+            <Navbar/>
             <div className={styles["social-links"]}>
                 <a href={social_links.linkedin} target="_blank" className={styles["social-icon"]} rel="noopener noreferrer">
                     <img src={linkedinIcon} alt="LOGO-LINKEDIN" className={styles["social-media-logo"]}/>
@@ -38,7 +36,7 @@ export const PortadaComponent: React.FC = () => {
                     GITHUB
                 </a>
             </div>
-        </div>
+
 
         <div className={styles["email-contact"]}>
             <a href={`mailto:${social_links.email}`} target="_blank" className={styles["email"]} rel=" noopener noreferrer">
