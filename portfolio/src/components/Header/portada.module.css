@@ -20,8 +20,19 @@
 .email-contact {
     position: absolute;
     z-index: 15;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #1f2226;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    color: #ff7733;
+    text-shadow: 0 0 5px #622100;
+}
+
+.email-contact:hover {
+    color: #ff7733;
+    text-shadow: 0 0 5px #622100;
 }
 
 .social-links {

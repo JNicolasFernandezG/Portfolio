@@ -17,38 +17,30 @@
 }
 
 .logo-container img {
-    height: 3rem;
+    height: 5rem;
     width: auto;
     display: block;
 }
 
 .nav-links {
     display: flex;
-    gap: 2rem; /* Espacio entre los enlaces de navegación */
+    gap: 3rem;
 }
 
 .nav-item {
-    /* Estilos base de los enlaces */
-    text-decoration: none;
-    color: white; /* Color inicial del texto (ajusta a tu fondo) */
-    font-size: 1rem;
+    font-family: 'poppins', sans-serif;
+    color: #1f2226;
+    font-size: 1.5rem;
     font-weight: 600;
-    transition: color 0.3s ease-in-out; /* Transición suave para el color */
+    transition: color 0.3s ease-in-out;
 }
 
-/* 2. Efecto HOVER (cuando el cursor está encima) */
 .nav-item:hover {
-    color: #4CAF50; /* ¡Cambia al color que desees al pasar el ratón! (Verde brillante como ejemplo) */
-    /* Puedes añadir otros efectos, como una sombra de texto sutil: */
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    color: #ff7733;
+    text-shadow: 0 0 5px #622100;
 }
 
-/* 3. Efecto ACTIVE (cuando el click está encima o el elemento está activo - opcional) */
-.nav-item:active {
-    color: #FFC107; /* Color cuando se pulsa el botón (Amarillo como ejemplo) */
-}
 
-/* Opcionalmente, para la responsividad del navbar */
 @media (max-width: 768px) {
     .navbar {
         padding: 1rem 1rem;
@@ -57,6 +49,6 @@
         gap: 1rem;
     }
     .logo-container img {
-        height: 2rem; /* Un poco más chico en móviles */
+        height: 2rem;
     }
 }
