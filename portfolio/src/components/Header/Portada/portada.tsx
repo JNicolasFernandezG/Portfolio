@@ -8,7 +8,7 @@ import twitterIcon from "@/assets/TWITTER.png"
 import githubIcon from "@/assets/GITHUB.png"
 
 // navbar
-import { Navbar } from "./navbar";
+import { Navbar } from "../Navbar/navbar";
 
 // utils
 import { social_links } from "./utils";

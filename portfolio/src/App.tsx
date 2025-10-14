@@ -1,5 +1,5 @@
 
-import PortadaComponent from './components/Header/portada'
+import PortadaComponent from './components/Header/Portada/portada';
 
 function App() {
   
