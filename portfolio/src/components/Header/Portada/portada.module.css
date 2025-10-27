@@ -9,11 +9,11 @@
 
 @keyframes reveal-up {
     0% {
-        transform: translateY(50px) scale(1.05); /* Empieza fuera de posición y ligeramente ampliada */
+        transform: translateY(50px) scale(1.05);
         opacity: 0;
     }
     100% {
-        transform: translateY(0) scale(1.05); /* Llega a su posición normal (manteniendo la escala para el subtle-zoom) */
+        transform: translateY(0) scale(1.05); 
         opacity: 1;
     }
 }
@@ -113,4 +113,22 @@
         width: 2rem; 
         height: 2rem;
     }
+}
+
+@keyframes text-reveal-blur {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+        filter: blur(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0px);
+    }
+}
+
+.reveal-text {
+    animation: text-reveal-blur 0.8s ease-out forwards;
+    opacity: 0; 
 }

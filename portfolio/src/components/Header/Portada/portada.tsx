@@ -20,7 +20,8 @@ import styles from"./portada.module.css"
 export const PortadaComponent: React.FC = () => {
 
     const imageClasses = `${styles["portada-imagen"]} ${styles["glitch-effect"]}`;
-
+    const revealClass = styles["reveal-text-container"];
+    
     return (
         <header className={styles["portada-header"]}>
             <img 
@@ -28,8 +29,10 @@ export const PortadaComponent: React.FC = () => {
                 alt="Imagen de Portada - Desarrollador Full Stack" 
                 className={imageClasses}
             />
-            <Navbar/>
-                        <div className={styles["social-links"]}>
+            <div className={revealClass}>
+                <Navbar/>
+            </div>
+            <div className={`${styles["social-links"]} ${revealClass}`}>
                 <a href={social_links.linkedin} target="_blank" className={styles["social-icon"]} rel="noopener noreferrer">
                     <img src={linkedinIcon} alt="LOGO-LINKEDIN" className={styles["social-media-logo"]}/>
                     LINKEDIN
@@ -44,8 +47,7 @@ export const PortadaComponent: React.FC = () => {
                 </a>
             </div>
 
-
-        <div className={styles["email-contact"]}>
+        <div className={`${styles["email-contact"]} ${revealClass}`}>
             <a href={`mailto:${social_links.email}`} target="_blank" className={styles["email"]} rel=" noopener noreferrer">
                 nicolas.fernandezGamarra@gmail.com
             </a>
