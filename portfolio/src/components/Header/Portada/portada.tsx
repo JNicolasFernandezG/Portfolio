@@ -29,9 +29,8 @@ export const PortadaComponent: React.FC = () => {
                 alt="Imagen de Portada - Desarrollador Full Stack" 
                 className={imageClasses}
             />
-            <div className={revealClass}>
                 <Navbar/>
-            </div>
+                
             <div className={`${styles["social-links"]} ${revealClass}`}>
                 <a href={social_links.linkedin} target="_blank" className={styles["social-icon"]} rel="noopener noreferrer">
                     <img src={linkedinIcon} alt="LOGO-LINKEDIN" className={styles["social-media-logo"]}/>

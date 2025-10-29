@@ -5,7 +5,8 @@ import styles from "./navbar.module.css"
 
 export const Navbar = () => {
     return(
-        <nav className={styles["navbar"]}>
+        
+    <nav className={styles["navbar"]}>
         <div className={styles["logo-container"]}>
             <img src={logoIcon} alt="logo-NFG" />
         </div >
