@@ -6,7 +6,7 @@ import styles from"./Tarjetas.module.css";
 import { body } from "framer-motion/client";
 
 
-export const sobremiComponent: React.FC = () => {
+export const SobremiComponent: React.FC = () => {
     return (
         <body>
             <h2>
@@ -48,3 +48,5 @@ export const sobremiComponent: React.FC = () => {
     )
 
 }
+
+export default SobremiComponent;

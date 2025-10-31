@@ -1,5 +1,6 @@
 
 import PortadaComponent from './components/Header/Portada/portada';
+import SobremiComponent from './components/sobreMi/Tarjetas';
 
 function App() {
   
@@ -9,7 +10,7 @@ function App() {
       <PortadaComponent/>
     </header>
     <main>
-
+      <SobremiComponent/>
     </main>
     <footer>
       
