@@ -3,8 +3,11 @@
     padding: 5rem 3rem; 
     color: #f9f9fb;
     background-color: #1f2226;
-    min-height: 80vh;
-        font-family: 'karla', sans-serif;
+    font-family: 'karla', sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
 }
 
 /* Título Principal */
@@ -24,6 +27,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     align-items: stretch;
+
 }
 
 /* Estilos de las Tarjetas (Fondo Gris Oscuro) */
@@ -35,8 +39,10 @@
     border-radius: 8px;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 200px; /* Altura mínima para alineación */
+    min-height: 200px;
 }
+
+
 
 .card-button {
     /* Estilo del botón "LEER MAS" */
