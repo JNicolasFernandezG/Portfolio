@@ -14,20 +14,25 @@
 .sobremi-section > h2 {
     font-size: 3.5rem;
     font-family: 'poppins', sans-serif;
-    margin-bottom: 3rem;
+    margin-bottom: 10rem;
     max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center ;
 }
 
-/* ---------------------------------------------------- */
-/* 💡 Estructura de la Cuadrícula (Cards) */
-/* ---------------------------------------------------- */
+.highlight-orange {
+    color: #ff7733;
+}
+
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     align-items: stretch;
-
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Estilos de las Tarjetas (Fondo Gris Oscuro) */
@@ -35,27 +40,82 @@
 .contact-card,
 .aptitudes-card {
     background-color: #32363B;
-    padding: 2.5rem;
+    padding: 4rem;
     border-radius: 8px;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 200px;
+    min-height: 280px;
+    height: 100%;
 }
 
+/* Estilos de la Tarjeta de Descripción */
+.card-description {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: center;
+}
 
+.description {
+    margin-bottom: 1rem;
+}
 
 .card-button {
-    /* Estilo del botón "LEER MAS" */
     background: none;
     border: none;
-    color: #ffddcc; /* Color naranja/durazno */
-    font-weight: bold;
+    color: #f9f9fb;
+    font-size: 1rem;
     cursor: pointer;
-    text-align: left;
+    text-align: center;
     padding: 0;
     margin-top: 1rem;
-    text-align: center;
-    
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/* Estilos de la Tarjeta de Aptitudes (Resiliencia/Agilidad) */
+.aptitudes-card {
+    /* Centrar el texto en las tarjetas de aptitudes */
+    text-align: center;
+    justify-content: center; /* Centrado vertical */
+}
 
+.aptitudes {
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+/* Estilos de la Tarjeta de Contacto */
+.contact-title {
+    font-size: 1.5rem;
+    color: #f9f9fb;
+    margin-bottom: 2rem;
+    font-family: poppins, sans-serif;
+    text-align: center;
+}
+
+.contact-card a {
+    /* Estilos para los enlaces de contacto (email, linkedin, etc.) */
+    color: #f9f9fb;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    display: block; /* Para que cada enlace ocupe su propia línea */
+}
+
+@media (max-width: 900px) {
+    .sobremi-section {
+        padding: 3rem 1.5rem;
+    }
+
+    /* Redefinimos el Grid a una sola columna */
+    .cards {
+        grid-template-columns: 1fr; /* Una columna para apilar las 4 tarjetas */
+        gap: 1.5rem; 
+    }
+    
+    .sobremi-section > h2 {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+}
