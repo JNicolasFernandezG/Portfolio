@@ -15,18 +15,25 @@ export const SobremiComponent: React.FC = () => {
             </h2>
             <div className={styles['cards']}>
                 
-                <div className={styles['description-contact-column']}>
-                <p className={styles['card-description']}>
+                <div className={styles['card-description']}>
+                <p className={styles['description']}>
                 Desarrollador Full Stack certificado, especializado en crear sistemas robustos y eficientes utilizando TypeScript, Next.js, NestJS y PostgreSQL. Mi experiencia no se limita al código; mi pasado como líder de equipos me ha enseñado a gestionar proyectos, verificar tareas y resolver problemas complejos con una visión integral.
                 </p>
                 <button className={styles['card-button']}>
                     LEER MAS
                 </button>
+                </div>
 
+                <div className={styles['aptitudes-card']}>
+                    <p className={styles['aptitudes']}>
+                    100% resiliencia
+                    <br />
+                    "Superando desafíos con persistencia."
+                    </p>
+                </div>
                 <div className={styles['contact-card']}>
                 <h3 className={styles['contact-title']}>Contactemos Creando el Futuro, juntos</h3>
-                <p className={styles['contact-info']}> 
-                    
+
                     <a href={`mailto:${social_links.email}`} target="_blank" className={styles["email"]} rel=" noopener noreferrer">
                     nicolas.fernandezGamarra@gmail.com
                 </a>
@@ -39,24 +46,16 @@ export const SobremiComponent: React.FC = () => {
                 <a href={social_links.github} target="_blank" className={styles["social-icon"]} rel="noopener noreferrer">
                     GITHUB
                 </a>
-
-                </p>
-                
                 </div>
 
+                <div className={styles['aptitudes-card']}>
+                    <p className={styles['aptitudes']}>
+                    Agilidad y Adaptabilidad
+                    <br />
+                    "Aprendizaje continuo en entornos dinámicos."
+                    </p>
                 </div>
 
-                <>
-                <p className={styles['aptitudes']}> 
-                100% Comprometido | 100% Proactivo | 100% Innovador
-                </p>
-                </>
-
-                <>
-                <p className={styles['aptitudes']}> 
-                100% Comprometido | 100% Proactivo | 100% Innovador
-                </p>
-                </>
             </div>
         </section>
     )
