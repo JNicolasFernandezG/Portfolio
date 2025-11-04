@@ -53,6 +53,8 @@
     font-size: 2rem;
     color: #f9f9fb ;
     
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     background-color: #32363b0e;
     padding: 5rem;
 }

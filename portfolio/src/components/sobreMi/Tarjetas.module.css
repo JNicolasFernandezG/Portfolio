@@ -34,6 +34,36 @@
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+
+    --scale-out: 1;
+}
+
+.cards:hover{
+    --scale-out: 0.80;
+}
+
+.card-description, 
+.contact-card,
+.aptitudes-card {
+    transform: scale(var(--scale-out));
+    cursor: pointer;
+    transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+                box-shadow 0.35s ease-in-out,
+                backdrop-filter 0.35s ease-in-out; 
+    will-change: transform, box-shadow;
+}
+
+.contact-card:hover,
+.aptitudes-card:hover {
+    transform: scale(1.35);
+    z-index: 10;
+    box-shadow: 0 15px 30px #c7cad6 ;
+}
+
+.card-description:hover {
+    transform: scale(1.35) translate(10rem, 10rem); 
+    z-index: 10;
+    box-shadow: 0 15px 30px rgba(199, 202, 214, 0.9);
 }
 
 /* Estilos de las Tarjetas (Fondo Gris Oscuro) */
@@ -46,16 +76,20 @@
     justify-content: space-between;
     min-height: 280px;
     height: 100%;
-    
     background-color: #32363b28;
+    
 }
 .card-description{
+    border-radius: 8px;
     padding: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 280px;
     height: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
 }
 
 /* Estilos de la Tarjeta de Descripción */
@@ -130,5 +164,16 @@
     .sobremi-section > h2 {
         font-size: 2.5rem;
         text-align: left;
+    }
+
+    .cards {
+        --scale-out: 1; 
+    }
+
+    .card-description,
+    .contact-card,
+    .aptitudes-card {
+        transform: none !important; 
+        box-shadow: none !important;
     }
 }
