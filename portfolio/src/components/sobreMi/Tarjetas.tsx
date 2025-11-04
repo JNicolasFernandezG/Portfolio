@@ -46,7 +46,7 @@ export const SobremiComponent: React.FC = () => {
                 <h3 className={styles['contact-title']}>Contactemos Creando el Futuro, juntos</h3>
 
                     <a href={`mailto:${social_links.email}`} target="_blank" className={styles["contact-text"]} rel=" noopener noreferrer">
-                    nicolas.fernandezGamarra@gmail.com
+                    CORREO
                 </a>
                     <a href={social_links.linkedin} target="_blank" className={styles["contact-text"]} rel="noopener noreferrer">
                     LINKEDIN

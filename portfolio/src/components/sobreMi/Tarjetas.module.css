@@ -23,6 +23,7 @@
 
 .highlight-orange {
     color: #ff7733;
+    font-weight: bold;
 }
 
 .cards {
@@ -36,12 +37,20 @@
 }
 
 /* Estilos de las Tarjetas (Fondo Gris Oscuro) */
-.card-description,
 .contact-card,
 .aptitudes-card {
-    background-color: #32363B;
     padding: 4rem;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 280px;
+    height: 100%;
+    
+    background-color: #32363b28;
+}
+.card-description{
+    padding: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -97,10 +106,14 @@
 
 .contact-card a {
     /* Estilos para los enlaces de contacto (email, linkedin, etc.) */
-    color: #f9f9fb;
+    color: #ff7733;
     text-decoration: none;
     margin-bottom: 0.5rem;
-    display: block; /* Para que cada enlace ocupe su propia línea */
+    display: block;
+    text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (max-width: 900px) {
