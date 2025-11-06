@@ -83,3 +83,10 @@ input, button, textarea, select {
   font: inherit;
   margin: 0;
 }
+
+
+.scroll-snap-container {
+    height: 100vh; 
+    overflow-y: scroll; 
+    scroll-snap-type: y mandatory; 
+}

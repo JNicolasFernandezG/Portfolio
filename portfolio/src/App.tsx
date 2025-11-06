@@ -1,21 +1,15 @@
 
 import PortadaComponent from './components/Header/Portada/portada';
 import SobremiComponent from './components/sobreMi/Tarjetas';
+import './index.css';
 
 function App() {
   
   return(
-    <>
-    <header>
+    <main className='scroll-snap-container'>
       <PortadaComponent/>
-    </header>
-    <main>
       <SobremiComponent/>
     </main>
-    <footer>
-      
-    </footer>
-    </>
 
   )
 }
