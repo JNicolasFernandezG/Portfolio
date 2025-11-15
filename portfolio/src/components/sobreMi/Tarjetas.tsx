@@ -1,5 +1,6 @@
 //vendors
 import type React from "react";
+import { Fade, Slide, Reveal } from "react-awesome-reveal";
 
 //styles
 import styles from"./Tarjetas.module.css";
@@ -10,6 +11,7 @@ import { social_links } from "./utils";
 export const SobremiComponent: React.FC = () => {
     return (
         <section className={styles['sobremi-section']}>
+            <Slide direction="left" triggerOnce>
             <h2>
                 Desarrollador&nbsp;
                 <span className={styles['highlight-orange']}>Full Stack</span>&nbsp;
@@ -20,8 +22,10 @@ export const SobremiComponent: React.FC = () => {
                 en&nbsp;
                 <span className={styles['highlight-orange']}>Código</span>
             </h2>
+            </Slide>
             <div className={styles['cards']}>
                 
+                <Fade direction="up" cascade damping={0.2} duration={800} triggerOnce>
                 <div className={styles['card-description']}>
                 <p className={styles['description']}>
                 Desarrollador Full Stack certificado,&nbsp;
@@ -67,6 +71,7 @@ export const SobremiComponent: React.FC = () => {
                     </p>
                 </div>
 
+                </Fade>
             </div>
         </section>
     )
