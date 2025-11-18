@@ -1,17 +1,28 @@
 //vendors
 import type React from "react";
-import { Fade, Slide, Reveal } from "react-awesome-reveal";
+import {Reveal} from "react-awesome-reveal";
 
 //styles
 import styles from"./Tarjetas.module.css";
 
 //utils
-import { social_links } from "./utils";
+import { social_links} from "./utils";
+import {
+    ANIMATION_DURATION, 
+    CASCADE_DAMPING, 
+    TRIGGER_ONCE,
+    titleSlideInCentered, 
+    cardFadeInUp
+} from "../../config/animaciones";
 
 export const SobremiComponent: React.FC = () => {
     return (
         <section className={styles['sobremi-section']}>
-            <Slide direction="left" triggerOnce>
+            <Reveal
+                keyframes={titleSlideInCentered}
+                duration={ANIMATION_DURATION}
+                triggerOnce={TRIGGER_ONCE}
+            >
             <h2>
                 Desarrollador&nbsp;
                 <span className={styles['highlight-orange']}>Full Stack</span>&nbsp;
@@ -22,10 +33,16 @@ export const SobremiComponent: React.FC = () => {
                 en&nbsp;
                 <span className={styles['highlight-orange']}>Código</span>
             </h2>
-            </Slide>
+            </Reveal>
             <div className={styles['cards']}>
-                
-                <Fade direction="up" cascade damping={0.2} duration={800} triggerOnce>
+            <Reveal
+                keyframes={cardFadeInUp} 
+                duration={ANIMATION_DURATION} 
+                triggerOnce={TRIGGER_ONCE}
+                cascade
+                damping={CASCADE_DAMPING}
+            >
+
                 <div className={styles['card-description']}>
                 <p className={styles['description']}>
                 Desarrollador Full Stack certificado,&nbsp;
@@ -70,8 +87,7 @@ export const SobremiComponent: React.FC = () => {
                     "Aprendizaje continuo en entornos dinámicos."
                     </p>
                 </div>
-
-                </Fade>
+            </Reveal>
             </div>
         </section>
     )

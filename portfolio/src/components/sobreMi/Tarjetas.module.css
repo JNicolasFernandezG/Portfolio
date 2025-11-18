@@ -17,11 +17,11 @@
     font-family: 'poppins', sans-serif;
     margin-bottom: 10rem;
     max-width: 100%;
+
     margin-left: auto;
     margin-right: auto;
-    text-align: center ;
+    text-align: center;
 }
-
 
 .highlight-orange {
     color: #ff7733;
@@ -47,12 +47,15 @@
 .card-description, 
 .contact-card,
 .aptitudes-card {
-    transform: scale(var(--scale-out));
+    transform: scale(1) translateY(30px);
     cursor: pointer;
-    transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
-                box-shadow 0.35s ease-in-out,
-                backdrop-filter 0.35s ease-in-out; 
     will-change: transform, box-shadow;
+}
+
+.card-description, 
+.contact-card,
+.aptitudes-card {
+    transition: transform 0.4s ease-out, box-shadow 0.4s ease-out, opacity 0.4s ease-out !important;
 }
 
 .contact-card:hover,
@@ -91,11 +94,7 @@
     height: 100%;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-
-}
-
-/* Estilos de la Tarjeta de Descripción */
-.card-description {
+    
     font-size: 1.5rem;
     line-height: 1.6;
     text-align: center;
@@ -123,7 +122,7 @@
 .aptitudes-card {
     /* Centrar el texto en las tarjetas de aptitudes */
     text-align: center;
-    justify-content: center; /* Centrado vertical */
+    justify-content: center;
 }
 
 .aptitudes {
@@ -179,15 +178,3 @@
         box-shadow: none !important;
     }
 }
-
-@keyframes tittle-slide-in {
-    0% {
-        opacity: 0;
-        transform: translateY(-100px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
