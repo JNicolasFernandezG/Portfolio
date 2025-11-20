@@ -2,9 +2,9 @@
 import { keyframes } from '@emotion/react';
 
 // --- A. CONSTANTES DE CONFIGURACIÓN ---
-export const ANIMATION_DURATION = 800; // Duración en milisegundos para todas las animaciones
+export const ANIMATION_DURATION = 1200; // Duración en milisegundos para todas las animaciones
 export const CASCADE_DAMPING = 0.2;    // Retraso entre elementos en secuencia (cascade)
-export const TRIGGER_ONCE = true;      // Controla si la animación se ejecuta solo una vez
+export const TRIGGER_ONCE = false;      // Controla si la animación se ejecuta solo una vez
 
 // --- B. DEFINICIÓN DE KEYFRAMES ---
 

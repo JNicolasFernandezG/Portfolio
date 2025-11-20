@@ -8,8 +8,6 @@
     width: 100%;
     overflow: hidden;
     scroll-snap-align: start;
-
-
 }
 
 
@@ -41,32 +39,36 @@
     --scale-out: 1;
 }
 
-.cards:hover{
-    --scale-out: 0.80;
-}
 
-.card-description, 
 .contact-card,
 .aptitudes-card {
-    transform: scale(1) translateY(30px);
+    transform: scale(1);
+
+    will-change: transform, box-shadow;
+    transition: transform 0.8s ease-out, box-shadow 0.4s ease-out, opacity 0.4s ease-out;
+}
+
+.card-description {
+    transform: scale(1);
+
     cursor: pointer;
     will-change: transform, box-shadow;
 
-    transition: transform 2.4s ease-out, box-shadow 0.4s ease-out, opacity 0.4s ease-out;
-}
+    transition: transform 0.8s ease-out, box-shadow 0.4s ease-out, opacity 0.4s ease-out;
 
+}
 
 .contact-card:hover,
 .aptitudes-card:hover {
     transform: scale(1.05);
     z-index: 10;
-    box-shadow: 0 15px 30px #c7cad6 ;
+    box-shadow: 0 2px 300px #c7cad6 ;
 }
 
 .card-description:hover {
-    transform: scale(1.35) translate(10rem, 10rem); 
+    transform: scale(1.05) translateY(-25px) translateX(-25px); 
     z-index: 10;
-    box-shadow: 0 15px 30px rgba(199, 202, 214, 0.9);
+    box-shadow: 0 2px 300px #c7cad6;
 }
 
 /* Estilos de las Tarjetas (Fondo Gris Oscuro) */
