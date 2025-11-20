@@ -9,10 +9,11 @@
     overflow: hidden;
     scroll-snap-align: start;
 
+
 }
 
-/* Título Principal */
-.sobremi-section > h2 {
+
+.tituloSobreMi {
     font-size: 3.5rem;
     font-family: 'poppins', sans-serif;
     margin-bottom: 10rem;

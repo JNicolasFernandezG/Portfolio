@@ -23,7 +23,7 @@ export const SobremiComponent: React.FC = () => {
                 duration={ANIMATION_DURATION}
                 triggerOnce={TRIGGER_ONCE}
             >
-            <h2>
+            <h2 className={styles['tituloSobreMi']}>
                 Desarrollador&nbsp;
                 <span className={styles['highlight-orange']}>Full Stack</span>&nbsp;
                 | Del&nbsp;
