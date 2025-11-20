@@ -51,13 +51,10 @@
     transform: scale(1) translateY(30px);
     cursor: pointer;
     will-change: transform, box-shadow;
+
+    transition: transform 2.4s ease-out, box-shadow 0.4s ease-out, opacity 0.4s ease-out;
 }
 
-.card-description, 
-.contact-card,
-.aptitudes-card {
-    transition: transform 0.4s ease-out, box-shadow 0.4s ease-out, opacity 0.4s ease-out !important;
-}
 
 .contact-card:hover,
 .aptitudes-card:hover {
@@ -175,7 +172,7 @@
     .card-description,
     .contact-card,
     .aptitudes-card {
-        transform: none !important; 
-        box-shadow: none !important;
+        transform: none; 
+        box-shadow: none;
     }
 }
