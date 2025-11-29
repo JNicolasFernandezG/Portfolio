@@ -32,3 +32,9 @@ export const cardFadeInUp = keyframes`
         visibility: visible;
     }
 `;
+
+// 3. navbar (Fade In Down)
+
+
+// 4. links (Fade In Up)
+

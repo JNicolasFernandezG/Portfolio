@@ -89,4 +89,17 @@ input, button, textarea, select {
     height: 100vh; 
     overflow-y: scroll; 
     scroll-snap-type: y mandatory; 
+    
+    &::-webkit-scrollbar {
+        display: none;
+        width: 0; 
+        background: transparent;
+    }
+
+    /* 2. Ocultar la barra en Firefox */
+    scrollbar-width: none;  
+    
+    /* 3. Ocultar la barra en Microsoft Edge y Internet Explorer */
+    -ms-overflow-style: none;  
 }
+
