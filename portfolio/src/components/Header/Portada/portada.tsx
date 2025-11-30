@@ -1,6 +1,6 @@
 //vendors
 import type React from "react";
-import Reveal from "react-awesome-reveal";
+import {Reveal} from "react-awesome-reveal";
 
 // img
 import portada from "@/assets/PORTADA.png"
@@ -18,7 +18,6 @@ import {
     CASCADE_DAMPING,
     TRIGGER_ONCE,
     titleSlideInCentered,
-    cardFadeInUp,
 } from "@/config/animaciones.ts";
 
 // styles
@@ -38,12 +37,14 @@ export const PortadaComponent: React.FC = () => {
             />
                 <Navbar/>
             
+            <div className={styles["social-links"]}>
             <Reveal
+                cascade
+                damping={CASCADE_DAMPING}
                 keyframes={titleSlideInCentered}
                 duration={ANIMATION_DURATION}
                 triggerOnce={TRIGGER_ONCE}
             >
-            // <div className={styles["social-links"]}>
                 <a href={social_links.linkedin} target="_blank" className={styles["social-icon"]} rel="noopener noreferrer">
                     <img src={linkedinIcon} alt="LOGO-LINKEDIN" className={styles["social-media-logo"]}/>
                     LINKEDIN
@@ -56,13 +57,19 @@ export const PortadaComponent: React.FC = () => {
                     <img src={githubIcon} alt="LOGO-GITHUB" className={styles["social-media-logo"]}/>
                     GITHUB
                 </a>
-            </div>
             </Reveal>
+            </div>
 
         <div className={styles["email-contact"]}>
+            <Reveal
+                keyframes={titleSlideInCentered}
+                duration={ANIMATION_DURATION}
+                triggerOnce={TRIGGER_ONCE}
+            >
             <a href={`mailto:${social_links.email}`} target="_blank" className={styles["email"]} rel=" noopener noreferrer">
                 nicolas.fernandezGamarra@gmail.com
             </a>
+            </Reveal>
         </div>
 
         </header>

@@ -13,7 +13,7 @@ import {
     TRIGGER_ONCE,
     titleSlideInCentered, 
     cardFadeInUp
-} from "../../config/animaciones";
+} from "@/config/animaciones";
 
 export const SobremiComponent: React.FC = () => {
     return (
@@ -42,7 +42,7 @@ export const SobremiComponent: React.FC = () => {
                 cascade
                 damping={CASCADE_DAMPING}
             >
-
+ 
                 <div className={styles['card-description']}>
                 <p className={styles['description']}>
                 Desarrollador Full Stack certificado,&nbsp;

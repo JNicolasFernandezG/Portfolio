@@ -9,7 +9,7 @@
 }
 
 
- 
+
 @keyframes reveal-up {
     0% {
         transform: translateY(50px) scale(1.05);
@@ -100,37 +100,6 @@
 }
 
 
-@keyframes text-reveal-blur {
-    0% {
-        opacity: 0;
-        transform: translateY(10px);
-        filter: blur(10px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-        filter: blur(0px);
-    }
-}
-
-.reveal-text-container {
-    animation: text-reveal-blur 0.8s ease-out forwards;
-    opacity: 0;
-    
-}
-
-.social-links a {
-    opacity: 0; 
-    animation: text-reveal-blur 0.8s ease-out forwards;
-    animation-delay: 1s;
-}
-
-
-.email-contact a {
-    opacity: 0;
-    animation: text-reveal-blur 0.8s ease-out forwards;
-    animation-delay: 1.5s;
-}
 
 @media (max-width: 768px) {
     .social-links {
