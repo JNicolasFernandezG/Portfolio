@@ -27,6 +27,14 @@
     font-weight: bold;
 }
 
+.highlight-orangeT {
+    background: linear-gradient(90deg,#ff7733, #ff4a00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;

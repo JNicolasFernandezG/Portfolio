@@ -25,13 +25,13 @@ export const SobremiComponent: React.FC = () => {
             >
             <h2 className={styles['tituloSobreMi']}>
                 Desarrollador&nbsp;
-                <span className={styles['highlight-orange']}>Full Stack</span>&nbsp;
+                <span className={styles['highlight-orangeT']}>Full Stack</span>&nbsp;
                 | Del&nbsp;
-                <span className={styles['highlight-orange']}>Liderazgo</span>&nbsp;
+                <span className={styles['highlight-orangeT']}>Liderazgo</span>&nbsp;
                 a la&nbsp;
-                <span className={styles['highlight-orange']}>Innovacion</span>&nbsp;
+                <span className={styles['highlight-orangeT']}>Innovacion</span>&nbsp;
                 en&nbsp;
-                <span className={styles['highlight-orange']}>Código</span>
+                <span className={styles['highlight-orangeT']}>Código</span>
             </h2>
             </Reveal>
             <div className={styles['cards']}>
