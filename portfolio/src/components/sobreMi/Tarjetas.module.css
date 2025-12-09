@@ -47,53 +47,49 @@
     --scale-out: 1;
 }
 
-
-.contact-card,
-.aptitudes-card {
-    transform: scale(1);
-
-    will-change: transform, box-shadow;
-    transition: transform 0.8s ease-out, box-shadow 0.4s ease-out, opacity 0.4s ease-out;
-}
-
-.card-description {
-    transform: scale(1);
-
-    cursor: pointer;
-    will-change: transform, box-shadow;
-
-    transition: transform 0.8s ease-out, box-shadow 0.4s ease-out, opacity 0.4s ease-out;
-
-}
-
 .contact-card:hover,
 .aptitudes-card:hover {
     transform: scale(1.05);
     z-index: 10;
-    box-shadow: 0 2px 300px #c7cad6 ;
+    box-shadow: 0 2px 50px #c7cad6 ;
 }
 
 .card-description:hover {
     transform: scale(1.05) translateY(-25px) translateX(-25px); 
     z-index: 10;
-    box-shadow: 0 2px 300px #c7cad6;
+    box-shadow: 0 2px 65px #c7cad6;
 }
 
 /* Estilos de las Tarjetas (Fondo Gris Oscuro) */
 .contact-card,
 .aptitudes-card {
+
+    transform: scale(1);
+    will-change: transform, box-shadow;
+    transition: transform 0.8s ease-out, box-shadow 0.4s ease-out, opacity 0.4s ease-out;
+
     padding: 4rem;
-    border-radius: 8px;
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 280px;
     height: 100%;
     background-color: #32363b28;
-    
+    box-shadow: 
+        0 0 10px rgba(31, 34, 38, 0.5), /* Sombra exterior suave */
+        inset 0 0 15px rgba(0, 0, 0, 0.5)
 }
 .card-description{
-    border-radius: 8px;
+
+    transform: scale(1);
+
+    cursor: pointer;
+    will-change: transform, box-shadow;
+    transition: transform 0.8s ease-out, box-shadow 0.4s ease-out, opacity 0.4s ease-out;
+    border: 1px solid #32363B;
+
+    border-radius: 12px;
     padding: 4rem;
     display: flex;
     flex-direction: column;
@@ -106,6 +102,8 @@
     font-size: 1.5rem;
     line-height: 1.6;
     text-align: center;
+    box-shadow: 
+        0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .description {

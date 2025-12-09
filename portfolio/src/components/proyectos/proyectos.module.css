@@ -1,0 +1,103 @@
+
+.proyectos-section{
+    padding: 5rem 3rem; 
+    color: #f9f9fb;
+    background-color: #1f2226;
+    font-family: 'karla', sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    scroll-snap-align: start;
+}
+
+.tituloProyectos {
+    font-size: 3.5rem;
+    font-family: 'poppins', sans-serif;
+    margin-bottom: 10rem;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.proyectos-swiper-container {
+    width: 100%;
+    max-width: 1000px; 
+    height: 700px; 
+    margin: 40px auto;
+    box-sizing: border-box;
+
+
+    border: 1px solid #32363B; 
+    border-radius: 12px; 
+    
+    box-shadow: 
+        0 0 10px rgba(31, 34, 38, 0.5),
+        inset 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+
+.slide-content {
+
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+    align-items: center; 
+    text-align: center;
+    width: 100%;
+    background-color: rgba(50, 54, 59, 0.2); 
+    border-radius: 12px;
+    
+
+    padding: 4rem; 
+    box-sizing: border-box;
+}
+
+
+.slide-image {
+    width: 80%;
+    max-height: 400px; 
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ffddcc;
+    box-shadow: 0 0 10px rgba(255, 119, 51, 0.4); 
+    margin-bottom: 2rem;
+}
+
+.slide-details {
+    width: 100%;
+    padding: 0 10px;
+    color: #c7cad6; /* Texto Secundario Gris Claro */
+    text-align: center;
+}
+
+.slide-details h3 {
+    color: #ff7733; /* Naranja Neón */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px rgba(255, 119, 51, 0.6);
+}
+
+
+/* Flechas de Navegación (Prev/Next) */
+.proyectos-swiper-container .swiper-button-next,
+.proyectos-swiper-container .swiper-button-prev {
+    color: #ff7733; 
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+
+.proyectos-swiper-container .swiper-pagination-bullet {
+    background: #c7cad6; 
+    opacity: 0.5;
+}
+
+.proyectos-swiper-container .swiper-pagination-bullet-active {
+    background: #ff7733; 
+    box-shadow: 0 0 6px #ff7733; 
+    opacity: 1;
+}
