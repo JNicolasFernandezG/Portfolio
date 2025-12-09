@@ -82,22 +82,7 @@
     text-shadow: 0 0 5px rgba(255, 119, 51, 0.6);
 }
 
-
-/* Flechas de Navegación (Prev/Next) */
-.proyectos-swiper-container .swiper-button-next,
-.proyectos-swiper-container .swiper-button-prev {
-    color: #ff7733; 
-    transition: color 0.3s, text-shadow 0.3s;
-}
-
-
-.proyectos-swiper-container .swiper-pagination-bullet {
-    background: #c7cad6; 
-    opacity: 0.5;
-}
-
-.proyectos-swiper-container .swiper-pagination-bullet-active {
-    background: #ff7733; 
-    box-shadow: 0 0 6px #ff7733; 
-    opacity: 1;
+.proyectos-swiper-container :global(.swiper-button-next),
+.proyectos-swiper-container :global(.swiper-button-prev) {
+    color: #c7cad6;
 }
