@@ -4,6 +4,7 @@ import {Reveal} from "react-awesome-reveal";
 
 //styles
 import styles from"./Tarjetas.module.css";
+import "@/index.css";
 
 //utils
 import { social_links} from "./utils";
@@ -25,13 +26,13 @@ export const SobremiComponent: React.FC = () => {
             >
             <h2 className={styles['tituloSobreMi']}>
                 Desarrollador&nbsp;
-                <span className={styles['highlight-orangeT']}>Full Stack</span>&nbsp;
+                <span className='highlight-orangeT'>Full Stack</span>&nbsp;
                 | Del&nbsp;
-                <span className={styles['highlight-orangeT']}>Liderazgo</span>&nbsp;
+                <span className='highlight-orangeT'>Liderazgo</span>&nbsp;
                 a la&nbsp;
-                <span className={styles['highlight-orangeT']}>Innovacion</span>&nbsp;
+                <span className='highlight-orangeT'>Innovacion</span>&nbsp;
                 en&nbsp;
-                <span className={styles['highlight-orangeT']}>Código</span>
+                <span className='highlight-orangeT'>Código</span>
             </h2>
             </Reveal>
             <div className={styles['cards']}>
@@ -46,9 +47,9 @@ export const SobremiComponent: React.FC = () => {
                 <div className={styles['card-description']}>
                 <p className={styles['description']}>
                 Desarrollador Full Stack certificado,&nbsp;
-                <span className={styles['highlight-orange']}>especializado en crear sistemas robustos y eficientes utilizando TypeScript, Next.js, NestJS y PostgreSQL.</span>&nbsp;
+                <span className='highlight-orange'>especializado en crear sistemas robustos y eficientes utilizando TypeScript, Next.js, NestJS y PostgreSQL.</span>&nbsp;
                 Mi experiencia no se limita al código; mi pasado como líder de equipos me ha enseñado a gestionar proyectos, verificar tareas y&nbsp;
-                <span className={styles['highlight-orange']}>resolver problemas complejos con una visión integral.</span>
+                <span className='highlight-orange'>resolver problemas complejos con una visión integral.</span>
                 </p>
                 <button className={styles['card-button']}>
                     LEER MAS

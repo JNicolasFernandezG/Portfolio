@@ -13,14 +13,31 @@ import styles from "./proyectos.module.css";
 
 // utils
 import { ProjectsUtils } from "./utils";
+import {
+    ANIMATION_DURATION, 
+    TRIGGER_ONCE,
+    titleSlideInCentered, 
+    cardFadeInUp
+} from "@/config/animaciones";
 
 export const proyextosComponent: React.FC = () => {
     return (
         <section className={styles['proyectos-section']}>
+            <Reveal
+            keyframes={titleSlideInCentered}
+            duration={ANIMATION_DURATION}
+            triggerOnce={TRIGGER_ONCE}
+            >
+
             <h2 className={styles['tituloProyectos']}>
                 Proyectos
             </h2>
-
+            </Reveal>
+            <Reveal
+            keyframes={cardFadeInUp} 
+            duration={ANIMATION_DURATION} 
+            triggerOnce={TRIGGER_ONCE}
+            >
             <Swiper
             modules={[Navigation]}
             slidesPerView={1}
@@ -48,6 +65,7 @@ export const proyextosComponent: React.FC = () => {
             </Swiper>
 
 
+            </Reveal>
         </section>
     )
 
