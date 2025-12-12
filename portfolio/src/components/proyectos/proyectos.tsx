@@ -4,7 +4,7 @@ import { Reveal } from "react-awesome-reveal";
 
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation} from "swiper/modules";
+import { Navigation, Pagination} from "swiper/modules";
 
 
 // styles
@@ -21,6 +21,7 @@ import {
 } from "@/config/animaciones";
 
 export const proyextosComponent: React.FC = () => {
+
     return (
         <section className={styles['proyectos-section']}>
             <Reveal
@@ -39,12 +40,13 @@ export const proyextosComponent: React.FC = () => {
             triggerOnce={TRIGGER_ONCE}
             >
             <Swiper
-            modules={[Navigation]}
+            modules={[Navigation, Pagination]}
             slidesPerView={1}
             centeredSlides={true}
             spaceBetween={20}
             loop={true}
             navigation
+            pagination={{ clickable: true }}
             className={styles['proyectos-swiper-container']}
             >    
                 {ProjectsUtils.map((project) => (
