@@ -1,0 +1,21 @@
+.experiencia-section {
+    padding: 5rem 3rem; 
+    color: #f9f9fb;
+    background-color: #1f2226;
+    font-family: 'karla', sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    scroll-snap-align: start;
+}
+
+.titulosobremi {
+    font-size: 3.5rem;
+    font-family: 'poppins', sans-serif;
+    margin-bottom: 10rem;
+    max-width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}

@@ -5,5 +5,10 @@ declare module '*.css' {
     export default content;
 }
 
+declare module '*.module.css' {
+    const classes: Record<string, string>;
+    export default classes;
+}
+
 // Allow importing Swiper's CSS entry points like 'swiper/css'
 declare module 'swiper/*';

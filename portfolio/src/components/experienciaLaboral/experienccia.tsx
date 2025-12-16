@@ -11,8 +11,8 @@ import {
     ANIMATION_DURATION, 
     TRIGGER_ONCE,
     titleSlideInCentered, 
-    cardFadeInUp
-} from "@/config/animaciones";
+    cardFadeInUp,
+} from "@/config/animaciones.ts"
 
 export const ExperienciaComponent: React.FC = () => {
     return (
