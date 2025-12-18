@@ -9,13 +9,39 @@
     scroll-snap-align: start;
 }
 
-.titulosobremi {
+.titulo {
     font-size: 3.5rem;
     font-family: 'poppins', sans-serif;
     margin-bottom: 10rem;
     max-width: 100%;
-
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: stretch;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.experiencia-Ministerio,
+.experiencia-reparaciones{
+    padding: 4rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 280px;
+    height: 100%;
+    background-color: #32363b28;
+    box-shadow: 
+        0 0 10px rgba(31, 34, 38, 0.5), /* Sombra exterior suave */
+        inset 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+
 }
