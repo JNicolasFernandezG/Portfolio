@@ -24,7 +24,7 @@ const titulo2 = (
     <>
     Oficial de Servicio | Ministerio de Seguridad
     <br />
-    Mar 2021 - Actualidad
+    Mar 2021 - Dic 2025
     </>
 );
 

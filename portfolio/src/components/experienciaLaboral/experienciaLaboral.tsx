@@ -12,21 +12,35 @@ import {
     TRIGGER_ONCE,
     titleSlideInCentered, 
     cardFadeInUp,
+    CASCADE_DAMPING,
 } from "@/config/animaciones.ts"
 
 export const ExperienciaComponent: React.FC = () => {
     return (
+
         <section className={styles['experiencia-section']}>
-            
-            <div className="cards">
-                <h2 className={styles['titulosobremi']}>
+            <Reveal
+                keyframes={titleSlideInCentered}
+                duration={ANIMATION_DURATION}
+                triggerOnce={TRIGGER_ONCE}
+            >    
+                <h2 className={styles['titulo']}>
                     EXPERIENCIAS
                 </h2>
+            </Reveal>
 
+            <div className={styles['cards']}>
+            <Reveal
+                keyframes={cardFadeInUp} 
+                duration={ANIMATION_DURATION} 
+                triggerOnce={TRIGGER_ONCE}
+                cascade
+                damping={CASCADE_DAMPING}            
+            >
                 {ExperienciaUtils.map((experiencia) => (
                     <div 
                         key={experiencia.id} 
-                        className={`experiencia-${experiencia.id === 1 ? 'reparaciones' : 'Ministerio'}`} 
+                        className={styles[`experiencia-${experiencia.id === 1 ? 'reparaciones' : 'Ministerio'}`]} 
                     >
                         <h3>
                             {experiencia.title}
@@ -36,7 +50,7 @@ export const ExperienciaComponent: React.FC = () => {
                         </p>
                     </div>
                 ))}
-
+            </Reveal>
             </div>
         </section>
     )
