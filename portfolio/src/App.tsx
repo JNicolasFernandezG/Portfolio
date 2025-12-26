@@ -5,6 +5,7 @@ import ProyectosComponent from './components/proyectos/proyectos';
 import ExperienciaComponent from './components/experienciaLaboral/experienciaLaboral';
 import EducacionComponent from './components/educacion/miEducacion';
 import HerramientasComponent from './components/herramientas/herramientas';
+import HabilidadesComponent from './components/Habilidades/habilidates';
 
 import './index.css';
 
@@ -18,6 +19,7 @@ function App() {
       <ExperienciaComponent/>
       <EducacionComponent/>
       <HerramientasComponent/>
+      <HabilidadesComponent/>
     </main>
 
   )
