@@ -3,7 +3,7 @@ import React from "react";
 import { Reveal } from "react-awesome-reveal";
 
 //styles
-import styles from "./habilidates.module.css";
+import styles from "./habilidades.module.css";
 
 //utils
 import { habilidadesData } from "./utils";

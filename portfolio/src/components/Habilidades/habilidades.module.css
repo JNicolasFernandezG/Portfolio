@@ -1,0 +1,10 @@
+.habilidades-section{
+    padding: 5rem 3rem; 
+    color: #f9f9fb;
+    background-color: #1f2226;
+    font-family: 'karla', sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    scroll-snap-align: start;
+}

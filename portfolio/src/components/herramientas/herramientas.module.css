@@ -36,6 +36,7 @@
     align-items: center;
     text-align: center;
     padding: 4rem 2rem;
+    
 }
 
 .title {
@@ -55,6 +56,14 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px 40px;
+    padding: 4rem;
+
+    border-radius: 12px;
+    border: 1px solid #32363B;
+    box-shadow: 
+        0 0 20px rgba(0, 0, 0, 0.5);
+
+
 }
 
 .toolName {
@@ -65,11 +74,11 @@
     transition: all 0.3s ease;
 }
 
-/* Efecto de brillo leve al pasar el mouse */
+
 .toolName:hover {
     color: #ff7733;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    transform: scale(1.05);
+    transform: scale(2.05);
     font-weight: bold;
 }
 
