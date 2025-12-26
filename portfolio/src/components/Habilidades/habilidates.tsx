@@ -23,7 +23,7 @@ export const HabilidadesComponent: React.FC = () => {
             duration={ANIMATION_DURATION}
             triggerOnce={TRIGGER_ONCE}
             >    
-            <h2>
+            <h2 className={styles.title}>
                 HABILIDADES
             </h2>
             </Reveal>

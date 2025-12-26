@@ -8,3 +8,28 @@
     overflow: hidden;
     scroll-snap-align: start;
 }
+
+.habilidad-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: stretch;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title{
+    font-size: 3.5rem;
+    font-family: 'poppins', sans-serif;
+    margin-bottom: 10rem;
+    max-width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.habilidad-item{
+    
+}
