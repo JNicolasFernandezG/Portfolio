@@ -1,0 +1,96 @@
+.herramientas-section{
+    padding: 5rem 3rem; 
+    color: #f9f9fb;
+    background-color: #1f2226;
+    font-family: 'karla', sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    scroll-snap-align: start;
+
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+.container {
+    background-color: #1f2226;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.marqueeImg {
+    height: 27px; /* Ajusta según el tamaño de tus imágenes */
+    margin: 0 20px;
+    display: inline-block;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.2));
+}
+
+.centerContent {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.title {
+    font-size: 3.5rem;
+    font-family: 'poppins', sans-serif;
+    margin-bottom: 10rem;
+    max-width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.textGrid {
+    display: grid;
+    grid-template-columns:repeat(4, minmax(200px, 1fr));
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 40px;
+}
+
+.toolName {
+    color: #f9f9fb;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Efecto de brillo leve al pasar el mouse */
+.toolName:hover {
+    color: #ff7733;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+    font-weight: bold;
+}
+
+.glassCard {
+    background: rgba(255, 255, 255, 0.03); 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 10px 20px;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.glassCard:hover {
+    background: rgba(255, 119, 51, 0.1);   
+    border: 1px solid rgba(255, 119, 51, 0.5);
+    box-shadow: 0 0 20px rgba(255, 119, 51, 0.4);
+    transform: translateY(-5px);     
+}

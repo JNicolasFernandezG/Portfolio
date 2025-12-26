@@ -4,6 +4,7 @@ import SobremiComponent from './components/sobreMi/Tarjetas';
 import ProyectosComponent from './components/proyectos/proyectos';
 import ExperienciaComponent from './components/experienciaLaboral/experienciaLaboral';
 import EducacionComponent from './components/educacion/miEducacion';
+import HerramientasComponent from './components/herramientas/herramientas';
 
 import './index.css';
 
@@ -16,6 +17,7 @@ function App() {
       <ProyectosComponent/>
       <ExperienciaComponent/>
       <EducacionComponent/>
+      <HerramientasComponent/>
     </main>
 
   )
