@@ -8,12 +8,26 @@ import styles from "./herramientas.module.css";
 
 //utils
 import {topTools, bottomTools, allToolsNames} from "./utils";
-import { div } from 'framer-motion/client';
+import{
+    ANIMATION_DURATION,
+    TRIGGER_ONCE,
+    titleSlideInCentered,
+    cardFadeInUp,
+    CASCADE_DAMPING
+} from "@/config/animaciones";
 
 
 export const HerramientasComponent: React.FC = () => {
     return (
         <section className={styles['herramientas-section']}>
+
+            <Reveal
+            keyframes={cardFadeInUp}
+            duration={ANIMATION_DURATION}
+            triggerOnce={TRIGGER_ONCE}
+            cascade
+            damping={CASCADE_DAMPING}
+            >
             <Marquee speed={90} direction='left' pauseOnHover={true} gradient={false}>
                 {topTools.map((tool, index) => (
                     <div key={index} className={styles.glassCard}>
@@ -29,6 +43,12 @@ export const HerramientasComponent: React.FC = () => {
                 ))}
             </Marquee>
 
+            </Reveal>
+            <Reveal
+                keyframes={titleSlideInCentered}
+                duration={ANIMATION_DURATION}
+                triggerOnce={TRIGGER_ONCE}
+            >
             <div className={styles.centerContent}>
                 <h2 className={styles.title}>HERRAMIENTAS</h2>
                 <div className={styles.textGrid}>
@@ -38,7 +58,15 @@ export const HerramientasComponent: React.FC = () => {
                     ))}
                 </div>
             </div>
+            </Reveal>
 
+            <Reveal
+            keyframes={cardFadeInUp}
+            duration={ANIMATION_DURATION}
+            triggerOnce={TRIGGER_ONCE}
+            cascade
+            damping={CASCADE_DAMPING}
+            >
             <Marquee speed={90} direction='right' pauseOnHover={true} gradient={false}>
                 {bottomTools.map((tool, index) => (
                     <div key={index} className={styles.glassCard}>
@@ -53,6 +81,7 @@ export const HerramientasComponent: React.FC = () => {
                     </div>
                 ))}
             </Marquee>
+            </Reveal>
         </section>
     )
 
