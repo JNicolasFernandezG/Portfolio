@@ -50,6 +50,7 @@
 
 .social-links,
 .email-contact {
+    border-radius: 12px;
     font-family: 'poppins', sans-serif;
     position: absolute;
     z-index: 15;
@@ -58,7 +59,7 @@
     
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    background-color: #32363b0e;
+    background-color: #32363b28;
     padding: 5rem;
 }
 

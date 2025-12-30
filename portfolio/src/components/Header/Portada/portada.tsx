@@ -30,11 +30,13 @@ export const PortadaComponent: React.FC = () => {
     
     return (
         <header className={styles["portada-header"]}>
+
             <img 
                 src={portada} 
                 alt="Imagen de Portada - Desarrollador Full Stack" 
                 className={`${styles["portada-imagen"]} ${styles["glitch-effect"]}`}
             />
+            
                 <Navbar/>
             
             <div className={styles["social-links"]}>
