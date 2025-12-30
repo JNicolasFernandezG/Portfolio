@@ -6,6 +6,7 @@ import ExperienciaComponent from './components/experienciaLaboral/experienciaLab
 import EducacionComponent from './components/educacion/miEducacion';
 import HerramientasComponent from './components/herramientas/herramientas';
 import HabilidadesComponent from './components/Habilidades/habilidates';
+import ContactameComponent from './components/contactame/contactame';
 
 import './index.css';
 
@@ -20,6 +21,7 @@ function App() {
       <EducacionComponent/>
       <HerramientasComponent/>
       <HabilidadesComponent/>
+      <ContactameComponent/>
     </main>
 
   )
