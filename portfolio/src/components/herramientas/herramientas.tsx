@@ -19,7 +19,7 @@ import{
 
 export const HerramientasComponent: React.FC = () => {
     return (
-        <section className={styles['herramientas-section']}>
+        <section id='herramientas' className={styles['herramientas-section']}>
 
             <Reveal
             keyframes={cardFadeInUp}

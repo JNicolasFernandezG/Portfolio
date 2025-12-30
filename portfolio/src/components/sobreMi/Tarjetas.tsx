@@ -18,7 +18,7 @@ import {
 
 export const SobremiComponent: React.FC = () => {
     return (
-        <section className={styles['sobremi-section']}>
+        <section id="sobreMi" className={styles['sobremi-section']}>
             <Reveal
                 keyframes={titleSlideInCentered}
                 duration={ANIMATION_DURATION}

@@ -23,7 +23,7 @@ export const EducacionComponent: React.FC = () => {
     const {educacionVisibles, cambiarPagina, esUltimaPagina, pagina} = useEducacion(3);
     
     return (
-        <section className={styles['educacion-section']}>
+        <section id='educacion' className={styles['educacion-section']}>
             <Reveal
                 keyframes={titleSlideInCentered}
                 duration={ANIMATION_DURATION}

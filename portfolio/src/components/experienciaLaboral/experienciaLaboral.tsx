@@ -18,7 +18,7 @@ import {
 export const ExperienciaComponent: React.FC = () => {
     return (
 
-        <section className={styles['experiencia-section']}>
+        <section id="experiencia" className={styles['experiencia-section']}>
             <Reveal
                 keyframes={titleSlideInCentered}
                 duration={ANIMATION_DURATION}

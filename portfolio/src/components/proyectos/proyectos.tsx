@@ -23,7 +23,7 @@ import {
 export const proyextosComponent: React.FC = () => {
 
     return (
-        <section className={styles['proyectos-section']}>
+        <section id="proyectos" className={styles['proyectos-section']}>
             <Reveal
             keyframes={titleSlideInCentered}
             duration={ANIMATION_DURATION}

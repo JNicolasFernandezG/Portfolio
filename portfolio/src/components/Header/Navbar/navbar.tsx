@@ -30,12 +30,12 @@ export const Navbar = () => {
         duration={ANIMATION_DURATION}
         triggerOnce={TRIGGER_ONCE}
         >
-        <a href="#sobre-mi" className={styles["nav-item"]}>SOBRE MI</a>
+        <a href="#sobreMi" className={styles["nav-item"]}>SOBRE MI</a>
         <a href="#proyectos" className={styles["nav-item"]}>PROYECTOS</a>
-        <a href="#contactame" className={styles["nav-item"]}>EXPERIENCIA</a>
-        <a href="#contactame" className={styles["nav-item"]}>EDUCACIÓN</a>
-        <a href="#contactame" className={styles["nav-item"]}>HERRAMIENTAS</a>
-        <a href="#contactame" className={styles["nav-item"]}>HABILIDADES</a>
+        <a href="#experiencia" className={styles["nav-item"]}>EXPERIENCIA</a>
+        <a href="#educacion" className={styles["nav-item"]}>EDUCACIÓN</a>
+        <a href="#herramientas" className={styles["nav-item"]}>HERRAMIENTAS</a>
+        <a href="#habilidades" className={styles["nav-item"]}>HABILIDADES</a>
         <a href="#contactame" className={styles["nav-item"]}>CONTACTAME</a>
     </Reveal>
         </div>
