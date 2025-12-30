@@ -37,21 +37,8 @@
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    min-height: 280px;
-    height: 100%;
-    background-color: #32363b28;
-    box-shadow: 
-        0 0 10px rgba(31, 34, 38, 0.5), /* Sombra exterior suave */
-        inset 0 0 15px rgba(0, 0, 0, 0.5)
-}
-
-.social-link-EMAIL{
-    padding: 4rem;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 280px;
+    align-items: center;
+    min-height: 200px;
     height: 100%;
     background-color: #32363b28;
     box-shadow: 
@@ -60,5 +47,7 @@
 }
 
 .social-media-logo{
-    
+    width: 10rem; 
+    height: auto;
+    display: block; 
 }

@@ -41,10 +41,10 @@ export const ContactameComponent: React.FC = () => {
                 </a>
                 </div>
 
-            <div className={styles["social-link-EMAIL"]}>
-            <a href={`mailto:${social_links.email}`} target="_blank" className={styles["email"]} rel="noopener noreferrer">
+            <div className={styles["social-link"]}>
+            <a href={`mailto:${social_links.email}`} target="_blank" className={styles["social-icon"]} rel="noopener noreferrer">
                 <img src={correoIcon} alt="LOGO-CORREO" className={styles["social-media-logo"]}/>
-                nicolas.fernandezGamarra@gmail.com
+                CORREO
             </a>
             </div>
 
