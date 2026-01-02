@@ -64,13 +64,11 @@
 }
 
 .social-icon:hover {
-    transition: color 0.5s ease-in-out;
     color: #ffddcc;
     text-shadow: 0 0 5px #622100;
 }
 
 .email-contact:hover {
-    transition: color 0.5s ease-in-out;
     color: #ffddcc;
     text-shadow: 0 0 5px #622100;
 }
