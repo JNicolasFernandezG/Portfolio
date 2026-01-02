@@ -43,7 +43,7 @@ export const SobremiComponent: React.FC = () => {
                 cascade
                 damping={CASCADE_DAMPING}
             >
- 
+
                 <div className={styles['card-description']}>
                 <p className={styles['description']}>
                 Desarrollador Full Stack certificado,&nbsp;
@@ -51,9 +51,9 @@ export const SobremiComponent: React.FC = () => {
                 Mi experiencia no se limita al código; mi pasado como líder de equipos me ha enseñado a gestionar proyectos, verificar tareas y&nbsp;
                 <span className='highlight-orange'>resolver problemas complejos con una visión integral.</span>
                 </p>
-                <button className={styles['card-button']}>
+                {/* <button className={styles['card-button']}>
                     LEER MAS
-                </button>
+                </button> */}
                 </div>
 
                 <div className={styles['aptitudes-card']}>
