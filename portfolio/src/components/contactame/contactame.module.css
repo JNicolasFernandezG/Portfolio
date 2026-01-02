@@ -51,3 +51,15 @@
     height: auto;
     display: block; 
 }
+
+.social-media-logo:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+    text-shadow: 0 0 20px #ff7733;
+    box-shadow: 
+        0 0 20px #ff7733,
+        inset 0 0 15px rgba(255, 119, 51, 0.5); /* Sombra interior suave */
+}
