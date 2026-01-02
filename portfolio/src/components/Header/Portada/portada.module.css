@@ -66,9 +66,11 @@
 .social-icon:hover {
     color: #ffddcc;
     text-shadow: 0 0 5px #622100;
+    transform: scale(1.1);
 }
 
-.email-contact:hover {
+
+.email:hover {
     color: #ffddcc;
     text-shadow: 0 0 5px #622100;
 }
