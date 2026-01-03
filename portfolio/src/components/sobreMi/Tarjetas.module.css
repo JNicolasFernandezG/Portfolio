@@ -144,16 +144,23 @@
 }
 
 .contact-card a {
-    /* Estilos para los enlaces de contacto (email, linkedin, etc.) */
-    color: #f9f9fb;
-    text-decoration: none;
-    margin-bottom: 0.5rem;
-    display: flex;
     text-align: center;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
     
+}
+
+.contact-text {
+    color: #f9f9fb;
+    text-decoration: none;
+    margin-bottom: 1.5rem; /* Espacio entre redes sociales */
+    display: flex;         /* Cambiamos a flex */
+    align-items: center;    /* Centrado vertical perfecto */
+    justify-content: flex-start; /* Alineado a la izquierda del contenido */
+    gap: 1rem;             /* Espacio entre el icono y la palabra */
+    width: 100%;           /* Ocupa el ancho para que el hover funcione bien */
+    transition: all 0.3s ease;
 }
 
 .contact-text:hover{
