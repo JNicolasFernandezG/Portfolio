@@ -78,7 +78,50 @@
     text-shadow: 0 0 5px rgba(255, 119, 51, 0.6);
 }
 
+
 .proyectos-swiper-container :global(.swiper-button-next),
 .proyectos-swiper-container :global(.swiper-button-prev) {
-    color: #c7cad6;
+    width: 30px;             /* Tamaño del círculo */
+    height: 30px;            /* Debe ser igual al ancho */
+    border-radius: 50%;      /* Círculo perfecto */
+    color: #ff7733;
+    transition: all 0.3s ease;
+    
+    /* Centrado perfecto del icono */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Efecto al pasar el mouse (Hover) */
+.proyectos-swiper-container :global(.swiper-button-next:hover),
+.proyectos-swiper-container :global(.swiper-button-prev:hover) {
+    background: #ff7733;        /* Se llena de naranja */
+    color: #1f2226;             /* La flecha cambia a oscuro para contrastar */
+    box-shadow: 0 0 15px rgba(255, 119, 51, 0.6); /* Brillo neón */
+    transform: scale(1.1);
+}
+
+/* --- PAGINACIÓN (BARRAS) --- */
+
+/* Estilo base de los indicadores */
+.proyectos-swiper-container :global(.swiper-pagination-bullet) {
+    width: 20px;          /* Los hacemos más largos (forma de cápsula) */
+    height: 4px;
+    border-radius: 2px;
+    background: #4b4f58 !important; /* Gris oscuro inactivo */
+    opacity: 1;
+    transition: all 0.4s ease;
+}
+
+/* Estado Activo: La barra se expande y brilla */
+.proyectos-swiper-container :global(.swiper-pagination-bullet-active) {
+    width: 50px;          /* Se estira cuando está activo */
+    background: #ff7733 !important; 
+    box-shadow: 0 0 10px rgba(255, 119, 51, 0.8);
+}
+
+/* Posición de los indicadores */
+.proyectos-swiper-container :global(.swiper-pagination) {
+    bottom: 20px !important;
 }
