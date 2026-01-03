@@ -28,14 +28,14 @@ export const HerramientasComponent: React.FC = () => {
             cascade
             damping={CASCADE_DAMPING}
             >
-            <Marquee speed={90} direction='left' pauseOnHover={true} gradient={false}>
+            <Marquee speed={90} direction='left' pauseOnHover={false} gradient={false}>
                 {topTools.map((tool, index) => (
                     <div key={index} className={styles.glassCard}>
                         <img src={tool.icon} alt="tool" className={styles.marqueeImg}/>
                     </div>
                 ))}
             </Marquee>
-                        <Marquee speed={50} direction='right' pauseOnHover={true} gradient={false}>
+                        <Marquee speed={50} direction='right' pauseOnHover={false} gradient={false}>
                 {bottomTools.map((tool, index) => (
                     <div key={index} className={styles.glassCard}>
                         <img src={tool.icon} alt="tool" className={styles.marqueeImg}/>
@@ -67,14 +67,14 @@ export const HerramientasComponent: React.FC = () => {
             cascade
             damping={CASCADE_DAMPING}
             >
-            <Marquee speed={90} direction='right' pauseOnHover={true} gradient={false}>
+            <Marquee speed={90} direction='right' pauseOnHover={false} gradient={false}>
                 {bottomTools.map((tool, index) => (
                     <div key={index} className={styles.glassCard}>
                         <img src={tool.icon} alt="tool" className={styles.marqueeImg}/>
                     </div>
                 ))}
             </Marquee>
-                        <Marquee speed={50} direction='left' pauseOnHover={true} gradient={false}>
+                        <Marquee speed={50} direction='left' pauseOnHover={false} gradient={false}>
                 {topTools.map((tool, index) => (
                     <div key={index} className={styles.glassCard}>
                         <img src={tool.icon} alt="tool" className={styles.marqueeImg}/>
@@ -87,4 +87,4 @@ export const HerramientasComponent: React.FC = () => {
 
 };
 
-export default HerramientasComponent;
+export default HerramientasComponent; 

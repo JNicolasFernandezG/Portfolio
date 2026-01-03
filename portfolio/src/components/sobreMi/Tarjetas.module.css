@@ -81,7 +81,6 @@
 
     transform: scale(1);
 
-    cursor: pointer;
     will-change: transform, box-shadow;
     transition: transform 0.8s ease-out, box-shadow 0.4s ease-out, opacity 0.4s ease-out;
     border: 1px solid #32363B;
@@ -108,7 +107,7 @@
     margin-right: auto;
 }
 
-.card-button {
+/* .card-button {
     background: none;
     border: none;
     color: #f9f9fb;
@@ -120,7 +119,7 @@
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 /* Estilos de la Tarjeta de Aptitudes (Resiliencia/Agilidad) */
 .aptitudes-card {
