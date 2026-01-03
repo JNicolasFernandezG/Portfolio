@@ -1,4 +1,4 @@
-import React, { type ReactNode } from 'react';
+import { type ReactNode } from 'react';
 
 import proyectoImage4 from '@/assets/proyectoImage4.png';
 import proyectoImage3 from '@/assets/proyectoImage3.png';
