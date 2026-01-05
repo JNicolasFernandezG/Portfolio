@@ -8,8 +8,8 @@ import logoIcon from "@/assets/LOGO.png"
 import {
     ANIMATION_DURATION,
     CASCADE_DAMPING,
-    TRIGGER_ONCE,
     titleSlideInCentered,
+    TRIGGER_ONCE_HEADER,
 } from "@/config/animaciones.ts";
 
 // styles
@@ -28,7 +28,7 @@ export const Navbar = () => {
         damping={CASCADE_DAMPING}
         keyframes={titleSlideInCentered}
         duration={ANIMATION_DURATION}
-        triggerOnce={TRIGGER_ONCE}
+        triggerOnce={TRIGGER_ONCE_HEADER}
         >
         <a href="#sobreMi" className={styles["nav-item"]}>SOBRE MI</a>
         <a href="#proyectos" className={styles["nav-item"]}>PROYECTOS</a>

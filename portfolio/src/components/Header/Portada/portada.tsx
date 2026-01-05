@@ -7,6 +7,7 @@ import portada from "@/assets/PORTADA.png"
 import linkedinIcon from "@/assets/LINKEDIN.png"
 import twitterIcon from "@/assets/TWITTER.png"
 import githubIcon from "@/assets/GITHUB.png"
+import emailIcon from "@/assets/CORREO.png"
 
 // navbar
 import { Navbar } from "../Navbar/navbar";
@@ -16,7 +17,7 @@ import { social_links } from "./utils";
 import {
     ANIMATION_DURATION,
     CASCADE_DAMPING,
-    TRIGGER_ONCE,
+    TRIGGER_ONCE_HEADER,
     titleSlideInCentered,
 } from "@/config/animaciones.ts";
 
@@ -45,7 +46,7 @@ export const PortadaComponent: React.FC = () => {
                 damping={CASCADE_DAMPING}
                 keyframes={titleSlideInCentered}
                 duration={ANIMATION_DURATION}
-                triggerOnce={TRIGGER_ONCE}
+                triggerOnce={TRIGGER_ONCE_HEADER}
             >
                 <a href={social_links.linkedin} target="_blank" className={styles["social-icon"]} rel="noopener noreferrer">
                     <img src={linkedinIcon} alt="LOGO-LINKEDIN" className={styles["social-media-logo"]}/>
@@ -59,20 +60,12 @@ export const PortadaComponent: React.FC = () => {
                     <img src={githubIcon} alt="LOGO-GITHUB" className={styles["social-media-logo"]}/>
                     GITHUB
                 </a>
+                <a href={`mailto:${social_links.email}`} target="_blank" className={styles["social-icon"]} rel=" noopener noreferrer">
+                    <img src={emailIcon} alt="LOGO-EMAIL" className={styles["social-media-logo"]}/>
+                    EMAIL
+                </a>
             </Reveal>
             </div>
-
-        <div className={styles["email-contact"]}>
-            <Reveal
-                keyframes={titleSlideInCentered}
-                duration={ANIMATION_DURATION}
-                triggerOnce={TRIGGER_ONCE}
-            >
-            <a href={`mailto:${social_links.email}`} target="_blank" className={styles["email"]} rel=" noopener noreferrer">
-                nicolas.fernandezGamarra@gmail.com
-            </a>
-            </Reveal>
-        </div>
 
         </header>
     )}
