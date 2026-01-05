@@ -47,14 +47,13 @@
 .aptitudes-card:hover {
     transform: scale(1.05);
     z-index: 10;
-    box-shadow: 0 2px 50px #c7cad6 ;
+    box-shadow: 0 2px 5px #c7cad6 ;
 }
 
 .card-description:hover {
-    transform: scale(1.05) translateY(-25px) translateX(-25px); 
+    transform: scale(1.05); 
     z-index: 10;
-    box-shadow: 0 2px 65px #c7cad6;
-    text-shadow: #ff7733 0px 0px 10px;
+    box-shadow: 0 2px 5px #c7cad6;
 }
 
 /* Estilos de las Tarjetas (Fondo Gris Oscuro) */
@@ -131,52 +130,6 @@
 .aptitudes {
     font-size: 1.5rem;
     line-height: 1.4;
-}
-
-/* Estilos de la Tarjeta de Contacto */
-.contact-title {
-    font-size: 1.5rem;
-    color: #f9f9fb;
-    margin-bottom: 2rem;
-    font-family: poppins, sans-serif;
-    text-align: center;
-}
-
-.contact-card a {
-    text-align: center;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-
-.contact-text {
-    color: #f9f9fb;
-    text-decoration: none;
-    margin-bottom: 1.5rem; /* Espacio entre redes sociales */
-    display: flex;         /* Cambiamos a flex */
-    align-items: center;    /* Centrado vertical perfecto */
-    justify-content: flex-start; /* Alineado a la izquierda del contenido */
-    gap: 1rem;             /* Espacio entre el icono y la palabra */
-    width: 100%;           /* Ocupa el ancho para que el hover funcione bien */
-    transition: all 0.3s ease;
-}
-
-.contact-text:hover{
-    color: #ff7733;
-    text-shadow: 0 0 10px #ff7733;
-}
-
-.social-media-logo{
-    width: 3rem; 
-    height: auto;
-    display: block; 
-}
-
-.social-link{
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
 }
 
 @media (max-width: 900px) {

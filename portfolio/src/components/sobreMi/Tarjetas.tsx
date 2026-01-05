@@ -6,14 +6,8 @@ import {Reveal} from "react-awesome-reveal";
 import styles from"./Tarjetas.module.css";
 import "@/index.css";
 
-//img
-import linkedinIcon from "@/assets/LINKEDIN.png"
-import twitterIcon from "@/assets/TWITTER.png"
-import githubIcon from "@/assets/GITHUB.png"
-import correoIcon from "@/assets/CORREO.png"
-
 //utils
-import { social_links} from "./utils";
+import {descriptionText} from"./utils";
 import {
     ANIMATION_DURATION, 
     CASCADE_DAMPING, 
@@ -52,14 +46,8 @@ export const SobremiComponent: React.FC = () => {
 
                 <div className={styles['card-description']}>
                 <p className={styles['description']}>
-                Desarrollador Full Stack certificado,&nbsp;
-                <span className='highlight-orange'>especializado en crear sistemas robustos y eficientes utilizando TypeScript, Next.js, NestJS y PostgreSQL.</span>&nbsp;
-                Mi experiencia no se limita al código; mi pasado como líder de equipos me ha enseñado a gestionar proyectos, verificar tareas y&nbsp;
-                <span className='highlight-orange'>resolver problemas complejos con una visión integral.</span>
+                    {descriptionText.description}
                 </p>
-                {/* <button className={styles['card-button']}>
-                    LEER MAS
-                </button> */}
                 </div>
 
                 <div className={styles['aptitudes-card']}>
@@ -68,33 +56,6 @@ export const SobremiComponent: React.FC = () => {
                     <br />
                     "Superando desafíos con persistencia."
                     </p>
-                </div>
-                
-                <div className={styles['contact-card']}>
-                <h3 className={styles['contact-title']}>Contactemos Creando el Futuro, juntos</h3>
-
-                <a href={`mailto:${social_links.email}`} target="_blank" className={styles["contact-text"]} rel=" noopener noreferrer">
-                    <img src={correoIcon} alt="LOGO-CORREO" className={styles["social-media-logo"]}/>
-                    CORREO
-                </a>
-
-
-                    <a href={social_links.linkedin} target="_blank" className={styles["contact-text"]} rel="noopener noreferrer">
-                    <img src={linkedinIcon} alt="LOGO-LINKEDIN" className={styles["social-media-logo"]}/>
-                    LINKEDIN
-                </a>
-
-
-                <a href={social_links.twitter} target="_blank" className={styles["contact-text"]} rel="noopener noreferrer">
-                    <img src={twitterIcon} alt="LOGO-TWITTER" className={styles["social-media-logo"]}/>
-                    TWITTER
-                </a>
-
-
-                <a href={social_links.github} target="_blank" className={styles["contact-text"]} rel="noopener noreferrer">
-                    <img src={githubIcon} alt="LOGO-GITHUB" className={styles["social-media-logo"]}/>
-                    GITHUB
-                </a>
                 </div>
 
                 <div className={styles['aptitudes-card']}>
