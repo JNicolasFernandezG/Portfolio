@@ -52,6 +52,12 @@ export const SobremiComponent: React.FC = () => {
 
                 <div className={styles['aptitudes-card']}>
                     <p className={styles['aptitudes']}>
+                        Experiencia trabajando en metodologías ágiles. Creo en la comunicación asertiva y el feedback constructivo como motores para el éxito del equipo.
+                    </p>
+                </div>
+
+                <div className={styles['aptitudes-card']}>
+                    <p className={styles['aptitudes']}>
                     100% resiliencia
                     <br />
                     "Superando desafíos con persistencia."
