@@ -38,10 +38,9 @@
     justify-content: space-evenly;
     min-height: 280px;
     height: 100%;
-    background-color: #32363b28;
-    box-shadow: 
-        0 0 10px rgba(31, 34, 38, 0.5), /* Sombra exterior suave */
-        inset 0 0 15px rgba(0, 0, 0, 0.5);
     text-align: center;
 
+    border: 1px solid #32363B;
+    background: #0c0c0c;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }

@@ -57,7 +57,7 @@
 .aptitudes-card:hover {
     transform: scale(1.01);
     z-index: 10;
-    box-shadow: 0 2px 3px #d6d0c7 ;
+    box-shadow: 0 2px 2px #d6d0c7 ;
 }
 
 .card-description,
@@ -68,6 +68,7 @@
     transition: transform 0.8s ease-out, box-shadow 0.4s ease-out, opacity 0.4s ease-out;
     border: 1px solid #32363B;
     background: #0c0c0c;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 12px;
     padding: 4rem;
     display: flex;
@@ -80,8 +81,6 @@
     line-height: 1.6;
     justify-content: center;
 
-    box-shadow: 
-        0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .description {
