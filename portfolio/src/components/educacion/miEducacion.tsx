@@ -30,7 +30,7 @@ export const EducacionComponent: React.FC = () => {
                 triggerOnce={TRIGGER_ONCE}
             >    
                 <h2 className={styles['titulo']}>
-                    EDUCACIÒN
+                    EDUCACIÓN
                 </h2>
             </Reveal>
             <div className={styles['cards']}>

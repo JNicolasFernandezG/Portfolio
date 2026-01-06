@@ -53,7 +53,7 @@
     padding: 1rem 2rem;
     background-color: transparent;
     color: #f9f9fb;
-    border: 2px solid #ff8c00;
+    border: 2px solid #ff7733;
     border-radius: 8px;
     cursor: pointer;
     font-family: 'poppins', sans-serif;
@@ -63,7 +63,7 @@
 }
 
 .boton-cambiar-pagina:hover {
-    background-color: #ff8c00;
+    background-color: #ff7733;
     color: #1f2226;
     box-shadow: 0 0 20px rgba(255, 140, 0, 0.3);
 }
