@@ -7,17 +7,22 @@ const Highlight = ({ children }: { children: React.ReactNode }) => (
     <span className="highlight-orange">{children}</span>
 );
 
+const Text = ({ children }: { children: React.ReactNode }) => (
+    <span className="text">{children}</span>
+);
+
 const titulo1 = (
     <>
     Henry | Full Stack Developer
     <br />
     Marzo - Julio 2025
+    <br />
     </>
 );
 
 const desc1 = (
     <>
-    Descripción: Durante mi formación en el bootcamp de Henry, transformé la teoría en práctica construyendo aplicaciones web completas. Aprendí a integrar <Highlight>tecnologías de backend y frontend</Highlight> para resolver problemas complejos y crear soluciones digitales funcionales.
+    <Text>Descripción: Durante mi formación en el bootcamp de Henry, transformé la teoría en práctica construyendo aplicaciones web completas. Aprendí a integrar </Text><Highlight>tecnologías de backend y frontend</Highlight> <Text>para resolver problemas complejos y crear soluciones digitales funcionales.</Text>
     </>
 );   
 
@@ -26,12 +31,13 @@ const titulo2 = (
     UAI | Desarrollo de Videojuegos y Gestión de Proyectos
     <br />
     2019 - 2020
+    <br />
     </>
 );
 
 const desc2 = (
     <>
-    Descripción: Durante mi paso por la UAI, cursé la carrera de Desarrollo de Videojuegos, perfeccioné mis habilidades en programación orientada a objetos, adquirí conocimientos clave en la gestión de proyectos, desde la <Highlight>identidad de marca hasta el análisis estratégico de negocios.</Highlight>
+    <Text>Descripción: Durante mi paso por la UAI, cursé la carrera de Desarrollo de Videojuegos, perfeccioné mis habilidades en programación orientada a objetos, adquirí conocimientos clave en la gestión de proyectos, desde la </Text><Highlight>identidad de marca hasta el análisis estratégico de negocios.</Highlight>
     </>
 );
 
@@ -40,12 +46,13 @@ const titulo3 = (
     Da Vinci | Carrera de Videojuegos
     <br />
     2017 - 2019
+    <br />
     </>
 );
 
 const desc3 = (
     <>
-    Descripción: En Da Vinci, mi formación se centró en el desarrollo integral de videojuegos. Adquirí conocimientos en <Highlight>programación orientada a objetos, animación, modelado 3D, diseño e ilustración</Highlight>, lo que me proporcionó una base sólida para entender la creación de proyectos digitales complejos desde múltiples perspectivas.
+    <Text>Descripción: En Da Vinci, mi formación se centró en el desarrollo integral de videojuegos. Adquirí conocimientos en </Text><Highlight>programación orientada a objetos, animación, modelado 3D, diseño e ilustración</Highlight><Text>, lo que me proporcionó una base sólida para entender la creación de proyectos digitales complejos desde múltiples perspectivas.</Text>
     </>
 );
 
@@ -56,12 +63,13 @@ const titulo4 = (
     Escuela de Policía "Juan Vucetich"
     <br />
     Marzo - Diciembre 2023
+    <br />
     </>
 );
 
 const desc4 = (
     <>
-    Enfoque en la planificación y ejecución de estrategias complejas, desarrollando una <Highlight>mentalidad analítica y de resolución de problemas bajo presión.</Highlight>
+    <Text>Enfoque en la planificación y ejecución de estrategias complejas, desarrollando una </Text><Highlight>mentalidad analítica y de resolución de problemas bajo presión.</Highlight>
     </>
 );
 
@@ -72,12 +80,13 @@ const titulo5 = (
     Escuela de Policía "Juan Vucetich"
     <br />
     Marzo - Diciembre 2021
+    <br />
     </>
 );  
 
 const desc5 = (
     <>
-    Formación en protocolos, operaciones y toma de decisiones rápidas. Adquirí experiencia en la <Highlight>ejecución de tareas de forma metódica</Highlight> y en el <Highlight>trabajo en equipo</Highlight> en entornos de alta demanda.
+    <Text>Formación en protocolos, operaciones y toma de decisiones rápidas. Adquirí experiencia en la </Text><Highlight>ejecución de tareas de forma metódica</Highlight><Text> y en el </Text><Highlight>trabajo en equipo</Highlight><Text> en entornos de alta demanda.</Text>
     </>
 );  
 
@@ -88,12 +97,13 @@ const titulo6 = (
     Superintendencia de Fuerzas de Operaciones Especiales
     <br />
     Abril - Julio 2022
+    <br />
     </>
 );
 
 const desc6 = (
     <>
-    Entrenamiento en la gestión de situaciones críticas y la respuesta rápida. Mi aprendizaje se centró en la <Highlight>ejecución precisa de estrategias y en la adaptabilidad a nuevos desafíos.</Highlight>
+    <Text>Entrenamiento en la gestión de situaciones críticas y la respuesta rápida. Mi aprendizaje se centró en la </Text><Highlight>ejecución precisa de estrategias y en la adaptabilidad a nuevos desafíos.</Highlight>
     </>
 );  
 
