@@ -55,7 +55,7 @@
 
 .card-description:hover,
 .aptitudes-card:hover {
-    transform: scale(1.01);
+    transform: scale(1.03);
     z-index: 10;
     box-shadow: 0 2px 2px #d6d0c7 ;
 }

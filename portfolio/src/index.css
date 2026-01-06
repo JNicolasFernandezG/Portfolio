@@ -105,7 +105,7 @@ input, button, textarea, select {
 
 .highlight-orange {
     color: #ff7733;
-    font-weight: 900;
+    font-weight: bold;
 }
 
 .highlight-orangeT {

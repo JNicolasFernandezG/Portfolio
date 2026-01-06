@@ -6,6 +6,9 @@ const Highlight = ({ children }: { children: React.ReactNode }) => (
     <span className="highlight-orange">{children}</span>
 );
 
+const Text = ({ children }: { children: React.ReactNode }) => (
+    <span className="text">{children}</span>
+);
 
 const titulo1 = (
     <>
@@ -17,7 +20,7 @@ const titulo1 = (
 
 const desc1 = (
     <>
-    Logro Principal: <Highlight> Liderazgo en la resolución de problemas complejos y gestión de equipos a gran escala. </Highlight> Tomé decisiones estratégicas en entornos de alta presión para asegurar la eficiencia y el cumplimiento de objetivos.
+    <Text>Logro Principal: </Text><Highlight> Liderazgo en la resolución de problemas complejos y gestión de equipos a gran escala. </Highlight> <Text>Tomé decisiones estratégicas en entornos de alta presión para asegurar la eficiencia y el cumplimiento de objetivos.</Text>
     </>
 );
 
@@ -31,7 +34,7 @@ const titulo2 = (
 
 const desc2 = (
     <>
-    Logro Principal: <Highlight> Diagnóstico y reparación integral de hardware y software. </Highlight> Brindé soluciones técnicas personalizadas y mantuve una alta satisfacción del cliente, enfocándome en la optimización del rendimiento de los equipos
+    <Text>Logro Principal: </Text><Highlight> Diagnóstico y reparación integral de hardware y software. </Highlight> <Text>Brindé soluciones técnicas personalizadas y mantuve una alta satisfacción del cliente, enfocándome en la optimización del rendimiento de los equipos.</Text>
     </>
 );
 
