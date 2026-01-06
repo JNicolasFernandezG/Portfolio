@@ -93,15 +93,6 @@
     align-items: center;
 }
 
-/* Efecto al pasar el mouse (Hover) */
-.proyectos-swiper-container :global(.swiper-button-next:hover),
-.proyectos-swiper-container :global(.swiper-button-prev:hover) {
-    background: #ff7733;        /* Se llena de naranja */
-    color: #1f2226;             /* La flecha cambia a oscuro para contrastar */
-    box-shadow: 0 0 15px rgba(255, 119, 51, 0.6); /* Brillo neón */
-    transform: scale(1.1);
-}
-
 /* --- PAGINACIÓN (BARRAS) --- */
 
 /* Estilo base de los indicadores */

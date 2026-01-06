@@ -15,31 +15,35 @@ const Highlight = ({ children }: { children: ReactNode }) => (
     <span className="highlight-orange">{children}</span>
 );
 
+const Text = ({ children }: { children: ReactNode }) => (
+    <span className="text">{children}</span>
+);
+
 const desc1 = (
     <>
-        Nuestra plataforma está diseñada específicamente para empoderar a agentes y corredores inmobiliarios a establecer una fuerte presencia digital de manera autónoma y profesional. El núcleo de nuestro servicio es permitirle 
+        <Text>Nuestra plataforma está diseñada específicamente para empoderar a agentes y corredores inmobiliarios a establecer una fuerte presencia digital de manera autónoma y profesional. El núcleo de nuestro servicio es permitirle </Text>
         <Highlight> crear y gestionar su propio sitio web personalizado </Highlight> 
-        sin requerir ningún tipo de 
+        <Text>sin requerir ningún tipo de </Text>
         <Highlight> conocimiento técnico avanzado </Highlight> 
-        en programación o diseño web.
+        <Text>en programación o diseño web.</Text>
     </>
 );
 
 const desc2 = (
     <>
-        El diseño se centra en la <Highlight>simplicidad y la eficiencia</Highlight>, y esto comienza desde el primer contacto. Entendemos que su tiempo es valioso, por eso hemos creado una <Highlight> sencilla forma de crear una cuenta </Highlight> que le garantiza un <Highlight> acceso casi instantáneo </Highlight> a todas las herramientas de la plataforma.
+        <Text>El diseño se centra en la </Text> <Highlight>simplicidad y la eficiencia</Highlight><Text>, y esto comienza desde el primer contacto. Entendemos que su tiempo es valioso, por eso hemos creado una </Text><Highlight> sencilla forma de crear una cuenta </Highlight> <Text>que le garantiza un </Text><Highlight> acceso casi instantáneo </Highlight> <Text>a todas las herramientas de la plataforma.</Text>
     </>
 );
 
 const desc3 = (
     <>
-        <Highlight>Simplificar la gestión de inventario</Highlight>. Nuestro diseño está optimizado para eliminar la complejidad de la <Highlight>administración de propiedades</Highlight>, permitiendo a los agentes invertir su tiempo en <Highlight>cerrar ventas</Highlight>, no en trámites digitales.
+        <Highlight>Simplificar la gestión de inventario</Highlight><Text>. Nuestro diseño está optimizado para eliminar la complejidad de la </Text><Highlight>administración de propiedades</Highlight><Text>, permitiendo a los agentes invertir su tiempo en </Text><Highlight>cerrar ventas</Highlight><Text>, no en trámites digitales.</Text>
     </>
 );
 
 const desc4 = (
     <>
-        Entendemos que la <Highlight>marca de cada agente inmobiliario es única</Highlight>. Nuestra plataforma no solo le proporciona un sitio web, sino una herramienta <Highlight> completamente personalizable </Highlight> diseñada para adaptarse a su identidad, su <Highlight>inventario específico</Highlight> y la forma en que usted interactúa con sus clientes.
+        <Text>Entendemos que la </Text><Highlight>marca de cada agente inmobiliario es única</Highlight><Text>. Nuestra plataforma no solo le proporciona un sitio web, sino una herramienta </Text><Highlight> completamente personalizable </Highlight><Text> diseñada para adaptarse a su identidad, su </Text><Highlight>inventario específico</Highlight><Text> y la forma en que usted interactúa con sus clientes.</Text>
     </>
 );
 
