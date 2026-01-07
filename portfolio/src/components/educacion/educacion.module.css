@@ -21,10 +21,10 @@
 
 .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
     align-items: stretch;
-    max-width: 800px;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
 }

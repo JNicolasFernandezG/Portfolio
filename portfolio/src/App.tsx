@@ -6,23 +6,27 @@ import ExperienciaComponent from './components/experienciaLaboral/experienciaLab
 import EducacionComponent from './components/educacion/miEducacion';
 import HerramientasComponent from './components/herramientas/herramientas';
 import HabilidadesComponent from './components/Habilidades/habilidates';
-import ContactameComponent from './components/contactame/contactame';
 
+import ScrollNavbar from './components/ScrollNavbar/ScrollNavbar'
 import './index.css';
 
 function App() {
-  
+  const sections = ['inicio','sobreMi', 'proyectos', 'experiencia', 'educacion', 'herramientas', 'habilidades'];
+
   return(
+
+    <>
+    <ScrollNavbar sectionIds={sections} />
     <main className='scroll-snap-container'>
-      <PortadaComponent/>
-      <SobremiComponent/>
-      <ProyectosComponent/>
-      <ExperienciaComponent/>
-      <EducacionComponent/>
-      <HerramientasComponent/>
-      <HabilidadesComponent/>
-      <ContactameComponent/>
+        <section id="inicio"><PortadaComponent/></section>
+        <section id="sobremi"><SobremiComponent/></section>
+        <section id="proyectos"><ProyectosComponent/></section>
+        <section id="experiencia"><ExperienciaComponent/></section>
+        <section id="educacion"><EducacionComponent/></section>
+        <section id="herramientas"><HerramientasComponent/></section>
+        <section id="habilidades"><HabilidadesComponent/></section>
     </main>
+    </>
 
   )
 }

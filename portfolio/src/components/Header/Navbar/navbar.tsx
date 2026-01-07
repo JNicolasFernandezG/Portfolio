@@ -36,7 +36,6 @@ export const Navbar = () => {
         <a href="#educacion" className={styles["nav-item"]}>EDUCACIÓN</a>
         <a href="#herramientas" className={styles["nav-item"]}>HERRAMIENTAS</a>
         <a href="#habilidades" className={styles["nav-item"]}>HABILIDADES</a>
-        <a href="#contactame" className={styles["nav-item"]}>CONTACTAME</a>
     </Reveal>
         </div>
     </nav>

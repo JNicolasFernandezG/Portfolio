@@ -1,0 +1,52 @@
+/* Contenedor principal de la barra lateral */
+.scroll-navbar {
+  position: fixed;
+  right: 30px; /* Separación del borde derecho */
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Espacio entre los puntos */
+  z-index: 9999; /* Para que siempre esté al frente */
+  padding: 15px 10px;
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo sutil */
+  backdrop-filter: blur(5px); /* Efecto de desenfoque moderno */
+  border-radius: 30px;
+}
+
+/* Estilo de los puntos (dots) */
+.nav-dot {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 2px solid #333;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Punto cuando la sección está activa */
+.nav-dot.active {
+  background-color: #333;
+  transform: scale(1.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-dot:hover {
+  background-color: #555;
+}
+
+/* Responsive: En celulares los puntos pueden molestar, podrías achicarlos */
+@media (max-width: 768px) {
+  .scroll-navbar {
+    right: 15px;
+    gap: 15px;
+  }
+  
+  .arrow-up {
+    width: 30px;
+    height: 30px;
+  }
+}

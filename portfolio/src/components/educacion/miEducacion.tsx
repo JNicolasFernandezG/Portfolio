@@ -7,7 +7,6 @@ import { Reveal } from 'react-awesome-reveal';
 import styles from './educacion.module.css';
 
 //utils
-import { useEducacion } from './useEducacion';
 
 import {
     ANIMATION_DURATION, 
@@ -16,11 +15,11 @@ import {
     cardFadeInUp,
     CASCADE_DAMPING,
 } from "@/config/animaciones.ts"
+import { EducacionUtils } from './utils';
 
 
 
 export const EducacionComponent: React.FC = () => {
-    const {educacionVisibles, cambiarPagina, esUltimaPagina, pagina} = useEducacion(3);
     
     return (
         <section id='educacion' className={styles['educacion-section']}>
@@ -35,25 +34,19 @@ export const EducacionComponent: React.FC = () => {
             </Reveal>
             <div className={styles['cards']}>
             <Reveal
-            key={pagina}
             keyframes={cardFadeInUp}
             duration={ANIMATION_DURATION}
             triggerOnce={TRIGGER_ONCE}
             cascade
             damping={CASCADE_DAMPING}
             >
-                {educacionVisibles.map((edu)=>(
+                {EducacionUtils.map((edu)=>(
                     <div key={edu.id} className={styles[`educacion-card`]}>
                         <h3>{edu.title}</h3>
                         <p>{edu.description}</p>
                     </div>
                 ))}
-                <div className={styles['container-boton']}>
-                    <button 
-                        className={styles['boton-cambiar-pagina']} onClick={cambiarPagina}>
-                        {esUltimaPagina ? 'Volver al inicio' : 'Ver más'}
-                    </button>
-                </div>
+
             </Reveal>
             </div>
 
