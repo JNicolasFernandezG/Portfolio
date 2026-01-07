@@ -1,7 +1,7 @@
 .habilidades-section{
     padding: 5rem 3rem; 
     color: #f9f9fb;
-    background-color: #1f2226;
+    background-color: #0c0c0c;
     font-family: 'karla', sans-serif;
     min-height: 100vh;
     width: 100%;
@@ -11,12 +11,12 @@
 
 .habilidades-list{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
     align-items: stretch;
-    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .title{
@@ -31,16 +31,15 @@
 }
 
 .habilidad-item{
-    padding: 4rem;
+    padding: 1rem;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    min-height: 280px;
+    min-height: 150px;
     height: 100%;
-    background-color: #32363b28;
-    box-shadow: 
-        0 0 10px rgba(31, 34, 38, 0.5), /* Sombra exterior suave */
-        inset 0 0 15px rgba(0, 0, 0, 0.5)
+    border: 1px solid #32363B;
+    background-color: #1f2226;
+
 } 

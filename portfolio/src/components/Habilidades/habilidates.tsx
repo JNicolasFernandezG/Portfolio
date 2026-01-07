@@ -43,7 +43,6 @@ export const HabilidadesComponent: React.FC = () => {
                         <h3>
                             {habilidad.title}
                         </h3>
-                        <p>{habilidad.description}</p>
                     </div>
                 ))}
                 </Reveal>
